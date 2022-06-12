@@ -1,0 +1,29 @@
+{
+  "name": "@sample/components",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "mocha \"dist/test/**/*.spec.js\""
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!dist/test",
+    "!dist/tsconfig.tsbuildinfo",
+    "!src/tsconfig.json"
+  ],
+  "license": "MIT",
+  "repository": "git@github.com:wixplosives/sample-monorepo.git",
+  "sideEffects": false,
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}
